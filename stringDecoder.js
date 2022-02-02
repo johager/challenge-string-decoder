@@ -25,16 +25,16 @@ function decoder(code) {
     const chars = []
     let i = 0
     while (i < code.length) {
-        i += Number(code[i]) + 1
+        i += +code[i] + 1
         chars.push(code[i])
         i += 1
     }
     return chars.join('')
 }
 
-function runDecoder(code) {
-    console.log("code:", code, "   decoded:", decoder(code))
-}
+// function runDecoder(code) {
+//     console.log("code:", code, "   decoded:", decoder(code))
+// }
 
 // runDecoder('0h2xce5ngbrdy')  // hey
 // runDecoder('3vdfn')  // n
