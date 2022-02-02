@@ -32,16 +32,6 @@ function decoder(code) {
     return chars.join('')
 }
 
-// function runDecoder(code) {
-//     console.log("code:", code, "   decoded:", decoder(code))
-// }
-
-// runDecoder('0h2xce5ngbrdy')  // hey
-// runDecoder('3vdfn')  // n
-// runDecoder('0r')  // r
-// runDecoder('2bna0p1mp2osl0e')  // apple
-// runDecoder('0y4akjfe0s')  // yes
-
 function testDecoder(code, desired) {
     const decoded = decoder(code)
     console.log("code:", code, "  decoded:", decoded, "  desired:", desired, "  passed:", decoded == desired)
